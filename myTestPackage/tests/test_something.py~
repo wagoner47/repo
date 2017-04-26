@@ -1,0 +1,16 @@
+
+from ..code import do_something, add_one
+
+def test_do_something(capsys) :
+    expect = 'testing 1 2 3 4 5........are you there?..............is anyone out there?'
+    out, err = capsys.readouterr()
+    assert out == expect
+
+def test_add_one_pos():
+    assert add_one(5) == 6
+
+def test_add_one_zero() :
+    assert add_one(0) == 1
+
+def test_add_one_neg() :
+    assert add_one(-5) == -4

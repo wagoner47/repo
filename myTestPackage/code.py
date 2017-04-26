@@ -1,8 +1,18 @@
 
-def do_something():
-    # complete
-    something = 'testing'
-    for i in range(1,5):
-        something += ' {}'.format(i)
-    something += '........are you there?..............is anyone out there?'
-    print(something)
+def do_something(base, power):
+    """
+    Find the value of ``base``^``power``
+    
+    Parameters
+    ----------
+    base : float
+        Number to exponentiate
+    power : float
+        Power to which to raise ``base``
+        
+    Returns
+    -------
+    float
+        The result of taking ``base``^``power``
+    """ 
+    return base**power

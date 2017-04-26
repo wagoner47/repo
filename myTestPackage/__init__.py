@@ -1,2 +1,3 @@
-from .code import do_something
+from .code import *
+from .tests import *
 #complete
